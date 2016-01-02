@@ -1,0 +1,44 @@
+create view Number as
+    extract regex /[0-9]+/
+        on D.text as number
+    from Document D;
+
+create view Color as
+    extract regex /R|G|B/
+        on D.text as color
+    from Document D;
+
+create view RGBunit as
+    extract pattern (<C.color>) /=/ (<N.number>)
+        return group 0 as Rgbunit
+           and group 1 as color
+           and group 2 as value
+    from Color C, Number N;
+
+create view RGB as
+    extract pattern (<R.Rgbunit>) <Token>{1,3} ((<R.Rgbunit>) <Token>{1,3} (<R.Rgbunit>))
+        return group 0 as RGB
+           and group 1 as Red
+           and group 2 as GreenAndBlue
+           and group 3 as Green
+           and group 4 as Blue
+    from RGBunit R;
+
+create view Pixel as
+    extract pattern (<N.number>) /x/ (<N.number>)
+    return group 0 as Pixel
+       and group 1 as Left
+       and group 2 as Right
+    from Number N;
+
+create view GreenAndBlue as
+  select rgb.GreenAndBlue as GreenAndBlue,
+        rgb.Red as Red
+  from RGB rgb;
+
+output view Number;
+output view Color;
+output view RGBunit;
+output view RGB;
+output view Pixel;
+output view GreenAndBlue as GAB;

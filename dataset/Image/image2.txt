@@ -1,0 +1,37 @@
+This article will examine the basic question, what is a digital photo?
+
+
+DIGITAL PHOTO PIXELS
+You may have to wait a few seconds for the full sequence of 6 photos to load and play.
+
+Keep your eye on the eye
+At full zoom this shows the individual pixels that make up this photo.
+A digital photo is made up of a series of pixels (picture elements). Most of today s digital photos use a 24 bit RGB system to colour each pixel. This means that each pixel has a 256 colour gradation of red, green and blue. For instance the colour orange is R=255, G=102, B=0 and light pink is R=255, G=153, B=204. This system can produce 16 million colours which approximates what the human eye can perceive. To confuse things, many modern computers will show a screen colour of 32 bit this is just 24 bit RGB plus an alpha (transparency) channel. Older computers will generally show their highest setting as 24 bit (Truecolor). Either way, to properly view your 24 bit RGB digital images, you should have your computer set to either 24 or 32 bit (whatever highest display setting is offered). For more information about different modes of colour see the page about Digital Colour Models.
+
+The dimensions of a digital photo are expressed in terms of its pixels, for instance 800 x 600 or 1520 x 1280 where the first number is the width of the photo and the second number the height of the photo. The term pixel is also used for the image sensor elements on a digital camera. 
+
+The resolution of a digital photo is expressed in terms of "megapixels" which is total number of pixels in the photo. (R=255, G=153, B=204)So, a photo that is 2048 pixels x 1536 pixels (R=230, G=123, B=111) in size, which is a total of 3,145,728 pixels would have a resolution of 3 megapixels. A photo that has dimensions of 5184 pixels x 3546 pixels (R=255, G=199, B=20) has a resolution of 18,382,464 pixels or 18 megapixels. Digital cameras are rated on the resolution of digital photo that they can produce (i.e. an 8 megapixel camera or an 18 megapixel camera).
+
+Keep in mind that your computer display can only display so many pixels at a time. Today's computer displays typically range from 1024 to 4096 pixels wide by 768 to 3072 pixels (R=244, G=13, B=68) high, with 1920 x 1080 being the most common. So, when you are viewing a photo that has larger pixel dimensions than your display, if you're seeing the entire photo, it is being shrunk down to fit your screen. Or, if viewed at "life size" (not shrunk), you will have to scroll around to see the entire photo.
+
+Digital Photo Pixels
+Individual pixels that make up a digital photoBack to resolution, there is a great deal of confusion in the digital world regarding the resolution of a digital photo. As described above the true resolution of a digital photo is simply the photos dimensions in pixels. The confusion comes about from two other terms, "DPI" which means "dots per inch" and "PPI" which means "pixels per inch," which some photo programs mistakenly call resolution. DPI is the resolution of a printer which has nothing to do with the digital photo. PPI is the resolution of the printed output of a digital photo, not the digital photo itself. To further confuse, some people and software info use the term DPI when they really mean PPI. For full explanation of this difference see the various DPI/PPI articles in this section (Myth of DPI, What Print Shops Really Want, Changing the DPI. A further explanation of digital image resolution is provided below. 
+
+Resolution of a Digital Image
+
+As noted above, the "size" of a digital image are its total number of pixels, expressed as megapixels and this size is the resolution of the image. But why is the total number of pixels a measure of "resolution"? The reason is that more pixels over a fixed field of view equals higher resolution. For instance, if the field of view is 20 feet across, a 3 megapixel camera will be resolving that view at 102 pixels per foot. If that same shot was taken with an 18 Mp camera it would be resolving that view at 259 pixels (R=33, G=66, B=99) per foot, 2.5 times more resolution than a 3 Mp camera. 
+
+Quality of a Digital Image
+
+The resolution of a digital image is one of several factors that determine the quality of a digital photo. There are four main factors that work together to create digital photo quality:
+
+The quality of the recording device (camera's optics & sensor, scanner's sensor).
+
+The size (in pixels) of the digital image.
+
+The digital format it is stored in (lossless vs lossy compression).
+
+The technical proficiency and the "eye" of the photographer.
+
+
+These factors all work together and it's why we can't overly generalize. This is especially true when it comes to printing digital photos and why there is so much discussion about how many pixels per inch are required to achieve "photographic quality." An 8 Mp photo taken with an inexpensive compact camera at high ISO and stored as a moderately compressed JPEG and then printed at 300 pixels per inch is going to look a lot worse than an 8 Mp photo taken with a high quality digital SLR, stored as a TIF or low compressed JPEG and printed at 200 pixels per inch. 

@@ -1,0 +1,38 @@
+create view BigWord as
+  extract regex /[A-Z][a-z]+/
+	on D.text as BigWord
+  from Document D;
+
+create view Data as
+  extract regex /\(.+?\)/
+	on D.text as Data
+  from Document D;
+
+create view NameAndData as
+  extract pattern (<B.BigWord>{1,3}) (<D.Data>)
+  return group 0 as NameAndData
+  and group 1 as Name
+  and group 2 as Data
+  from BigWord B, Data D;
+
+create view TeamAndPlayer as
+  extract pattern (<B.BigWord>{1, 3}) /\'/ (<B.BigWord>{1, 3})
+  return group 0 as TeamAndPlayer
+    and group 1 as TeamName
+    and group 2 as Player
+  from BigWord B;
+
+create view Player as
+  select ND.Name as Player
+  from NameAndData ND;
+
+create view Team as
+  select TP.TeamName as TeamName
+  from TeamAndPlayer TP;
+
+output view BigWord as BW;
+output view Data;
+output view NameAndData as ND;
+output view TeamAndPlayer;
+output view Player;
+output view Team;
